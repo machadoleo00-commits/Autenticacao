@@ -1,0 +1,20 @@
+# Banco de dados SQLite (estado local, criado automaticamente pelo código)
+*.db
+
+# Variáveis de ambiente e chaves secretas (nunca versionar)
+.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais Python
+venv/
+env/
+.venv/
+
+# Arquivo temporário gerado pela extensão Code Runner
+tempCodeRunnerFile.py
+
+# Configurações de editor
+.vscode/
