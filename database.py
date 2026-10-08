@@ -44,10 +44,9 @@ def adicionar_usuario(username, senha_hash):
     try:
         cursor.execute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, senha_hash))
         conexao.commit()
-        print(f"Usuário {username} adicionado com sucesso.")
     except sqlite3.IntegrityError:
-        print(f"Usuário {username} já existe.")
         return False  
     finally:
         conexao.close()
     return True
+
